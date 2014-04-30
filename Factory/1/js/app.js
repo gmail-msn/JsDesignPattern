@@ -1,6 +1,8 @@
 require.config({
+	baseUrl: 'js',
     paths: {
-        jquery: './libs/jquery-2.1.0.min',
+        jquery: '../../../js/libs/jquery-2.1.0.min',
+		Utils: '../../../js/utils',
         PizzaStore: './app/PizzaStore',
         Pizza: './app/Pizza',
         ChicagoPizzaStore : './app/stores/ChicagoPizzaStore',
@@ -17,9 +19,9 @@ require.config({
 });
 
  
-require(['jquery', 'PizzaStore', 'Pizza', 'ChicagoPizzaStore', 'NYPizzaStore'], 
-	function($, PizzaStore, Pizza, ChicagoPizzaStore, NYPizzaStore) {
-    //alert($().jquery);
+require(['jquery', 'PizzaStore', 'Pizza', 'ChicagoPizzaStore', 'NYPizzaStore', 'Utils'], 
+	function($, PizzaStore, Pizza, ChicagoPizzaStore, NYPizzaStore, Utils) {
+    new Utils();
     var oPizzaStore = new NYPizzaStore();
 	oPizzaStore.orderPizza("cheese");
 	
