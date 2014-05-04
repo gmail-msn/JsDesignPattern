@@ -2,18 +2,16 @@
   <head>
     <link type="text/css" rel="stylesheet" href="../../css/style.css"/>
 	<title>Template Pattern</title>
-	<script type="text/javascript" src="CaffeineBeverage.js"></script>
-	<script type="text/javascript" src="Coffee.js"></script>
-	<script type="text/javascript" src="Tea.js"></script>
+	<script data-main="js/main" src="../../js/libs/require.js"></script>
   </head>
   <body>
   	<div id="source">
       <h2>Source</h2>
       <pre>
-var oCoffee = new Coffee();
-oCoffee.prepareRecipe();
-var oTea = new Tea();
-oTea.prepareRecipe();
+		var oCoffee = new Coffee();
+		oCoffee.prepareRecipe();
+		var oTea = new Tea();
+		oTea.prepareRecipe();
       </pre>
     </div>
     <div id="console">
@@ -21,7 +19,7 @@ oTea.prepareRecipe();
 	    <ul></ul>
 	    <h1>TEMPLATE</h1>
     </div>
-    <script type="text/javascript" src="../../js/utils.js"></script>
+    <!--script type="text/javascript" src="../../js/utils.js"></script>
     <script type="text/javascript">
     	setTimeout(function()
     	{
@@ -31,6 +29,6 @@ oTea.prepareRecipe();
 			var oTea = new Tea();
 			oTea.prepareRecipe();
     	}, 1000);
-    </script>
+    </script-->
   </body>
 </html>
