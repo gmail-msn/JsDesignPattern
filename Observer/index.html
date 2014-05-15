@@ -2,19 +2,15 @@
   <head>
     <link type="text/css" rel="stylesheet" href="../css/style.css"/>
 	<title>Observer Pattern</title>
-	<script type="text/javascript" src="Subject.js"></script>
-	<script type="text/javascript" src="Observer.js"></script>
-	<script type="text/javascript" src="Display.js"></script>
-	<script type="text/javascript" src="WeatherData.js"></script>
-	<script type="text/javascript" src="CurrentConditionsDisplay.js"></script>
+	<script data-main="js/main" src="../js/libs/require.js"></script>
   </head>
   <body>
     <div id="source">
       <h2>Source</h2>
       <pre>
-var oWeatherData = new WeatherData();
-var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
-oWeatherData.setMeasurements(80, 65, 30.4);
+		var oWeatherData = new WeatherData();
+		var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
+		oWeatherData.setMeasurements(80, 65, 30.4);
       </pre>
     </div>
     <div id="console">
@@ -22,11 +18,11 @@ oWeatherData.setMeasurements(80, 65, 30.4);
 	    <ul></ul>
 	    <h1>OBSERVER</h1>
     </div>
-    <script type="text/javascript" src="../js/utils.js"></script>
+    <!--script type="text/javascript" src="../js/utils.js"></script>
     <script type="text/javascript">
 		var oWeatherData = new WeatherData();
 		var oCurrentConditionsDisplay = new CurrentConditionsDisplay(oWeatherData);
 		oWeatherData.setMeasurements(80, 65, 30.4);
-    </script>
+    </script-->
   </body>
 </html>
