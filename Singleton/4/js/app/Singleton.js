@@ -18,7 +18,7 @@ define(['jquery'],
 				console.log( "static method called!" );
 			}
 			return Singleton;
-		}
+		};
 		
 		/* this function will throw an Uncaught TypeError: undefined is not a function Exception*/
 		//Singleton.prototype.getInstance = function() {
