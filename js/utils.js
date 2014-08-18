@@ -18,8 +18,8 @@ define(
 				}
 			}
 		};
-		var oConsole = document.getElementById("console");
-		var oList =  oConsole.getElementsByTagName("ul")[0];
+		var oConsole = $("console");
+		var oList =  $("ul")[0];
 		function fpLog(sMessage) {
 			var oElement = document.createElement("li");
 			oElement.appendChild(document.createTextNode("- " + sMessage));
