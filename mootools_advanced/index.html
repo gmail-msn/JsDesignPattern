@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+        <title>Mootools</title>
+        <script data-main="js/main" src="../js/libs/require.js"></script>
+    </head>
+   <body>
+        <div id="source">
+            <h2>Source</h2>
+            <pre>
+				var oChainable = new Chainable();
+				// This must return "21"
+				oChainable.add(3).add(4).multiply(3).toString();
+            </pre>
+        </div>
+        <div id="console">
+            <h2>Console</h2>
+			<div style="position:auto; height:210px; overflow:none">
+				<ul></ul>
+			</div>
+            <h1>Mootools</h1>
+        </div>
+        <!--script type="text/javascript" src="../js/utils.js"></script>
+        <script type="text/javascript">
+            var oChainable = new Chainable();
+            // This must return "21"
+            console.log(oChainable.add(3).add(4).multiply(3).toString());
+        </script--><!--script type="text/javascript" src="../js/utils.js"></script>
+        <script type="text/javascript">
+            var oChainable = new Chainable();
+            // This must return "21"
+            console.log(oChainable.add(3).add(4).multiply(3).toString());
+        </script-->
+    </body>
+</html>
