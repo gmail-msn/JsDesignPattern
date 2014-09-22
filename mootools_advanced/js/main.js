@@ -10,13 +10,14 @@ require.config({
 		TestEvent: './app/TestEvent',
 		TestImplementExtends: './app/TestImplementExtends',
 		ProtectPrivate: './app/ProtectPrivate',
+		ThisSelfDemo: './app/ThisSelfDemo',
 		ImplementDemo: './app/ImplementDemo'
     }
 });
 
  
-require(['jquery', 'Utils', 'DynamicClass', 'GetterSetter', 'TestEvent', 'TestImplementExtends', 'ProtectPrivate', 'ImplementDemo'], 
-	function($, Utils, DynamicClass, GetterSetter, TestEvent, TestImplementExtends, ProtectPrivate, ImplementDemo) {
+require(['jquery', 'Utils', 'DynamicClass', 'GetterSetter', 'TestEvent', 'TestImplementExtends', 'ProtectPrivate', 'ImplementDemo', 'ThisSelfDemo'], 
+	function($, Utils, DynamicClass, GetterSetter, TestEvent, TestImplementExtends, ProtectPrivate, ImplementDemo, ThisSelfDemo) {
 		new Utils();		
 		
 		new DynamicClass().display();
@@ -26,5 +27,18 @@ require(['jquery', 'Utils', 'DynamicClass', 'GetterSetter', 'TestEvent', 'TestIm
 		
 		ProtectPrivate.show();
 		new ImplementDemo("a1", "a2").myCustomMethod();
+		
+		var thisSelf = new ThisSelfDemo();
+		thisSelf.myFn();
+		
+		var ID = function () {
+		  // Math.random should be unique because of its seeding algorithm.
+		  // Convert it to base 36 (numbers + letters), and grab the first 9 characters
+		  // after the decimal.
+		  return '_' + Math.random().toString(36)/*.substr(2, 9)*/;
+		};
+		console.log("ID:" + ID());
+		console.log("ID:" + ID());
+				
 	}
 );
