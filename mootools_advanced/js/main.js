@@ -39,6 +39,11 @@ require(['jquery', 'Utils', 'DynamicClass', 'GetterSetter', 'TestEvent', 'TestIm
 		};
 		console.log("ID:" + ID());
 		console.log("ID:" + ID());
+		
+		console.error('1');
+		console.info('2');
+		console.log('3');
+		console.warn('4');
 				
 	}
 );
