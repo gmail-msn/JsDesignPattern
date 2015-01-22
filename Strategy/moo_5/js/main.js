@@ -27,6 +27,11 @@ require(
 		oDecoyDuck.display();
 		oDecoyDuck.performQuack();
 		
+		var oMallardDuck = new MallardDuck();
+		oMallardDuck.display();
+		oMallardDuck.fly();
+		oMallardDuck.quack();
+		
 		var oRubberDuck = new RubberDuck();
 		oRubberDuck.performFly();
 		

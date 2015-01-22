@@ -7,7 +7,7 @@ define(
 		var QuackBehavior = new Class({
 			
 			initialize : function() {
-			
+				console.log("QuackBehavior root class");
 			},
 			quack : function() {
 				throw new Error("This method must be overwritten");
